@@ -92,7 +92,7 @@ function Hero({ changeDrink, activeDrink, products }) {
 
   useEffect(() => {
     if (circleRef.current && drinkRef.current && cartRef.current) {
-      // document.addEventListener("mousemove", parallex);
+      document.addEventListener("mousemove", parallex);
     }
     return () => {
       document.removeEventListener("mousemove", parallex);
@@ -226,7 +226,7 @@ function Hero({ changeDrink, activeDrink, products }) {
               width={400}
               height={580}
               className="shadow-[0px_0px_10px_rgba(0,0,0,1);]"
-              
+              loading="eager"
             />
           </div>
         </div>
@@ -239,7 +239,7 @@ function Hero({ changeDrink, activeDrink, products }) {
               }}
               className="cursor-pointer p-1 transition-translate duration-300 hover:-translate-y-4 hover:-translate-x-1"
             >
-              <Image src={url} alt={alt} width={80} height={120} />
+              <Image src={url} alt={alt} width={80} height={120}  loading="eager"/>
             </div>
           ))}
         </div>

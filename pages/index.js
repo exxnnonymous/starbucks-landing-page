@@ -76,13 +76,9 @@ export const getServerSideProps = wrapper.getServerSideProps(
 
     try {
       const res = await axios.get(`${process.env.NEXT_PUBLIC_APP_URL}/api/products/getall`);
-      console.log(process.env)
-      console.log(res)
-      console.log(res.data)
       store.dispatch(setProducts(res.data.products));
       store.dispatch(setActiveDrink(res.data.products[0]));
     } catch (err) {
-      console.log(err)
     }
 
     try {
@@ -105,7 +101,6 @@ export const getServerSideProps = wrapper.getServerSideProps(
         store.dispatch(setUser({ user: null, auth: false }));
       }
     } catch (err) {
-      console.log(err)
     }
 
     return {

@@ -110,7 +110,7 @@ function CartItem({ name, price, count, imgurl, _id,product_id }) {
   return (
     <div className="flex gap-4 shadow-[0px_0px_10px_2px_rgba(0,0,0,.1)] border-zinc-900 py-2 px-8 rounded-md  hover:shadow-[0px_0px_10px_2px_rgba(0,0,0,.2)] transition-shadow duration-300 items-center justify-between">
       <div className="flex gap-4 items-center">
-        <Image src={imgurl} alt={name} width={60} height={90} />
+        <Image src={imgurl} alt={name} width={60} height={90}  loading="eager"/>
         <div>
           <div className="font-medium mb-1">{name}</div>
           <div className="flex gap-2">
