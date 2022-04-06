@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Starbucks!
 
-## Getting Started
+Starbucks full stack website made with Next Js for both front-end and back-end. 
 
-First, run the development server:
+## Table of contents
+- [Overview](#overview)
+	 - [Screenshot](#screenshot)
+	- [Run Project](#run)
+	 - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Overview
+Front-end part includes home page where users can see drinks and add items to cart or remove items from cart. I have actually implemented storing cart items in local storage when user is not logged in and store items to their account when they are logged. The state is managed using redux toolkit. I have used stripe api for payment processing. Users can also go to account page where they can see the products they have bought till date.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I used next.js api for backend. Users can create or login to their account. I have used mongodb atlas for database.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Screenshot
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![](./screenshot.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Run
+Clone the project
 
-## Learn More
+    git clone https://github.com/exxnnonymous/starbucks-landing-page.git
+Build and start the app
 
-To learn more about Next.js, take a look at the following resources:
+    npm run build && npm start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Links
+- Live Site URL: ()
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## My process
 
-## Deploy on Vercel
+### Built with
+- CSS modules and [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [React Icons](https://react-icons.github.io/react-icons/) - For icons
+- [Redux toolkit](https://redux-toolkit.js.org/) - For state management
+- [next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper) - For implementing redux in serverside
+- [Next Js](https://nextjs.org/) - React Framework
+- [Stripe](https://stripe.com/) - For payment
+- MongoDB and Mongoose for Database
+- Axios to fetch data, bcrypt for hashing user password and implemented jsonwebtoken and cookie for secure user authentication.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### What I learned
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+I learned a lot while building this website. I learned a lot about state management. I learned to use redux toolkit and also to implement it in serverside using [next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper). I learned to use stripe api, create stripe checkout session and more about it. I learned more about user authentication and to make website secure implementing jsonwebtoken and cookie. I learned to manage the state using Context API and useReducer Hooks. I also learned a lot on CRUD while creating, logging in user, updating cart items, and updating products users have bought.
+
+## Author
+
+- Twitter - [@exxnnonymous](https://www.twitter.com/exxnnonymous)
+- LinkedIn - [Sulav Bista](https://www.linkedin.com/in/sulav-bista-208562236/)
