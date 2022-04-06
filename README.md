@@ -30,7 +30,7 @@ Build and start the app
     npm run build && npm start
 
 ### Links
-- Live Site URL: ()
+- Live Site URL: (https://starbucks-eosin.vercel.app)
 
 ## My process
 
