@@ -40,6 +40,8 @@ if(isLoggedIn){
 }
   },[isLoggedIn])
 
+ 
+
 
 
   return (
@@ -116,15 +118,15 @@ if(isLoggedIn){
               </div>
               <div className="flex gap-4 justify-between items-center">
                 <div className="text-sm hover:underline text-indigo-600 font-medium">
-                  <Link href="/register" passHref>
+                  {!loading && <Link href="/register" passHref>
                     <a onClick={()=>{dispatch(startLoading())}}>
                     Dodn&apos;t have an account? Register
                     </a>
-                  </Link>
+                  </Link>}
                 </div>
                 <button
                 disabled={loading}
-                  className="bg- border border-transparent text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 py-[6px] px-4 rounded-[4px]"
+                  className="bg- border border-transparent text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 py-[6px] px-4 rounded-[4px] disabled:cursor-not-allowed"
                   type="submit"
                 >
                   Login

@@ -225,7 +225,6 @@ function Hero({ changeDrink, activeDrink, products }) {
               alt="drink"
               width={400}
               height={580}
-              className="shadow-[0px_0px_10px_rgba(0,0,0,1);]"
               loading="eager"
             />
           </div>
