@@ -51,4 +51,4 @@ I learned a lot while building this website. I learned a lot about state managem
 ## Author
 
 - Twitter - [@exxnnonymous](https://www.twitter.com/exxnnonymous)
-- LinkedIn - [Sulav Bista](https://www.linkedin.com/in/sulav-bista-208562236/)
+- LinkedIn - [Sulav Bista](https://www.linkedin.com/in/sulav-bista/)
